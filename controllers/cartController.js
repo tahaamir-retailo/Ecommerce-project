@@ -5,6 +5,8 @@ const Product=require('../models/productModel');
 const Cart=require('../models/cartModel');
 const Order=require('../models/orderModel');
 
+//array product name issue
+
 const adToCart = async (req,res)=>{
     const user=req.body.user;
     const {name,description,vendor,price}=req.body;
@@ -43,7 +45,7 @@ const order =async (req,res)=>{
         status:"Order Confirmed!"
     })
     old_cart=await Cart.findOneAndRemove({_id:cart});
-    
+
     res.json(order);
 }
 
