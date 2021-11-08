@@ -4,7 +4,7 @@ const {viewCategory,viewSCategory,getProducts}=require('../controllers/productCo
 
 
 router.get('/viewCategory',viewCategory);
-router.get('/viewSCategory',viewSCategory);
-router.get('/getProducts',getProducts);
+router.get('/viewSCategory/:id',viewSCategory);
+router.get('/getProducts/:id',getProducts);
 
 module.exports = router;
