@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const jwt=require('jsonwebtoken');
 const bcrypt=require('bcrypt');
-const Product=require('../models/productModel');
+const {model:Product}=require('../models/productModel');
 
 
 const viewCategory = async (req,res)=>{

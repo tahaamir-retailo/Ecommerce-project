@@ -31,4 +31,5 @@ var productSchema=new Schema({
 });
 
 
-module.exports=mongoose.model('Product',productSchema);
+module.exports={model:mongoose.model('Product',productSchema),
+schema:productSchema};
